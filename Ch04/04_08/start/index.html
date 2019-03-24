@@ -13,7 +13,7 @@ var title = 'ES6';
 		console.log(iterateIt.next());
 		console.log(iterateIt.next());
 
-		function tableReady(arr) {
+		function foodReady(arr) {
 			var nextIndex = 0;
 			return {
 				next() {
@@ -27,12 +27,12 @@ var title = 'ES6';
 		}
 
 		var waitingList = ['Sarah', 'Heather', 'Anna', 'Meagan'];
-		var iterateList = tableReady(waitingList);
+		var iterateList = foodReady(waitingList);
 
-		console.log(`${iterateList.next().value}, your table is ready`);
-		console.log(`${iterateList.next().value}, your table is ready`);
-		console.log(`${iterateList.next().value}, your table is ready`);
-		console.log(`${iterateList.next().value}, your table is ready`);
+		console.log(`${iterateList.next().value}, your food is ready`);
+		console.log(`${iterateList.next().value}, your food is ready`);
+		console.log(`${iterateList.next().value}, your food is ready`);
+		console.log(`${iterateList.next().value}, your food is ready`);
 		console.log(`Is this finished? ${iterateList.next().done}`);
 		
 	</script>
