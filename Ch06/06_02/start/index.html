@@ -13,17 +13,17 @@
 				console.log(`I am a ${this.description} with ${this.wheels} wheels`);
 			}
 		}
-		var coolSkiVan = new Vehicle("cool ski van", 4);
+		var coolBmw = new Vehicle("cool Bmw", 4);
 
-		coolSkiVan.describeYourself();
+		coolBmw.describeYourself();
 
-		class SemiTruck extends Vehicle {
+		class BmwM5 extends Vehicle {
 			constructor() {
-				super("semi truck", 18)
+				super("BmwM5", 4)
 			}
 		}
 
-		var groceryStoreSemi = new SemiTruck();
+		var groceryStoreSemi = new BmwM5();
 		groceryStoreSemi.describeYourself();
 
 
